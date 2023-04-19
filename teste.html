@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
 
-</head>
-<body>
-    <script>
-        function escreve() {
-            //window.alert("teste")
-            var var1 = document.getElementById("val1");
-            var var2 = document.getElementById("val2");
-            //window.alert(var1.value + " " + var2.value)
-            document.getElementById("resultado").innerText = var1.value + " " + var2.value;
-        }
-    </script>
-    <input id="val1" value="1">
-    <input id="val2" value="2">
-    <button onclick="escreve()">Escrever</button>
-    <p id="resultado">XXXX</p>
-</body>
+   <script type="text/javascript">
+    var celsius = parseFloat( prompt("Temperatura em graus Celsius: ") );
+
+    var fahrenheit = (9*celsius/5) + 32 ;
+
+    document.write("Temperatura em graus Fahrenheit = ", 
+                   fahrenheit);
+   </script>
+
+ </head>
 </html>
